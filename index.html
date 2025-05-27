@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Footwear </title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Urban Footwear</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#offers">Offers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+      
+        <a href="cart.html" class="icon" id="cart-icon">🛒<span class="cart-count">0</span></a> 
+  <a href="login.html" class="icon" id="profileIcon">👤</a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#offers">Offers</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="home">
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+      <div class="hero-slides">
+        <img src="urban 2.webp" alt="Urban Footwear Collection" />
+        <img src="model 2.webp" alt="Latest Models" />
+        <img src="model 4.jpg" alt="Street Style" />
+        <img src="The_N_shoe_Banner.webp" alt="Premium Sneakers" />
+      </div>
+      
+      <!-- Hero Overlay -->
+      <div class="hero-overlay">
+        <h1>Step into Style</h1>
+        <p>Shop the latest urban footwear trends</p>
+        <div class="search-box">
+          <select id="heroSearch">
+            <option disabled selected>Search products...</option>
+            <option value="sneakers">Sneakers</option>
+            <option value="running">Running Shoes</option>
+            <option value="casual">Casual Footwear</option>
+            <option value="sports">Sports Shoes</option>
+          </select>
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+
+      <!-- Hero Navigation -->
+      <div class="hero-nav">
+        <button class="hero-dot active" data-slide="0"></button>
+        <button class="hero-dot" data-slide="1"></button>
+        <button class="hero-dot" data-slide="2"></button>
+        <button class="hero-dot" data-slide="3"></button>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-bar">
+          <input type="text" id="searchInput" placeholder="Search products..." />
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="sneakers">Sneakers</option>
+            <option value="running">Running Shoes</option>
+            <option value="casual">Casual</option>
+            <option value="sports">Sports</option>
+          </select>
+          <select id="priceFilter">
+            <option value="">All Prices</option>
+            <option value="0-2000">₱0 - ₱2,000</option>
+            <option value="2000-4000">₱2,000 - ₱4,000</option>
+            <option value="4000-6000">₱4,000 - ₱6,000</option>
+            <option value="6000+">₱6,000+</option>
+          </select>
+          <select id="sortFilter">
+            <option value="">Sort by</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name">Name A-Z</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="shop">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+          
+          <div class="card" data-id="shoe1" data-price="2499.00" data-category="casual" data-name="Merrel">
+            <div class="card-image">
+              <img src="image.png" alt="Merrel" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Merrel</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(24)</span>
+              </div>
+              <p class="price">₱2,499.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe1">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7.5">7.5</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe2" data-price="999.00" data-category="sneakers" data-name="Old School Vans">
+            <div class="card-image">
+              <img src="old skul.webp" alt="Old School Vans" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Old School Vans</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(45)</span>
+              </div>
+              <p class="price">₱999.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe2">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe3" data-price="5300.00" data-category="sneakers" data-name="Continental 80">
+            <div class="card-image">
+              <img src="kiw.jpg" alt="Continental 80" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Continental 80</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(32)</span>
+              </div>
+              <p class="price">₱5,300.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe3">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe4" data-price="4300.00" data-category="casual" data-name="Stan Smith">
+            <div class="card-image">
+              <img src="oo.jpg" alt="Stan Smith" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Stan Smith</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(67)</span>
+              </div>
+              <p class="price">₱4,300.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe4">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe5" data-price="4000.00" data-category="sneakers" data-name="Converse Pro Blaze">
+            <div class="card-image">
+              <img src="converse.jpg" alt="Converse Pro Blaze" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Converse Pro Blaze</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(28)</span>
+              </div>
+              <p class="price">₱4,000.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe5">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe6" data-price="5300.00" data-category="sports" data-name="Nike Air Force 1">
+            <div class="card-image">
+              <img src="nike airforce 1.jpg" alt="Nike Air Force 1" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Nike Air Force 1</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(89)</span>
+              </div>
+              <p class="price">₱5,300.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe6">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe7" data-price="2599.00" data-category="running" data-name="Cortez">
+            <div class="card-image">
+              <img src="cortez.jpg" alt="Cortez" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Cortez</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(19)</span>
+              </div>
+              <p class="price">₱2,599.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe7">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe8" data-price="6500.00" data-category="sports" data-name="Jordan 1">
+            <div class="card-image">
+              <img src="Jordan 1.jpg" alt="Jordan 1" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Jordan 1</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(156)</span>
+              </div>
+              <p class="price">₱6,500.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe8">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe9" data-price="3800.00" data-category="casual" data-name="VL Court 3.0">
+            <div class="card-image">
+              <img src="VL court 3.0.jpg" alt="VL Court 3.0" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>VL Court 3.0</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(42)</span>
+              </div>
+              <p class="price">₱3,800.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe9">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe10" data-price="4000.00" data-category="running" data-name="Charged Pursuit 3">
+            <div class="card-image">
+              <img src="Charged pursuit 3.jpg" alt="Charged Pursuit 3" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Charged Pursuit 3</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(35)</span>
+              </div>
+              <p class="price">₱4,000.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe10">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe11" data-price="8000.00" data-category="sneakers" data-name="Onitsuka Tiger Mexico 66">
+            <div class="card-image">
+              <img src="Onitsuka tiger mexico 67.jpg" alt="Onitsuka Tiger Mexico 66" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Onitsuka Tiger Mexico 66</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(78)</span>
+              </div>
+              <p class="price">₱8,000.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe11">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe12" data-price="4500.00" data-category="casual" data-name="Fred Perry Mens">
+            <div class="card-image">
+              <img src="Fred Perry Mens B721.jpg" alt="Fred Perry Mens" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Fred Perry Mens</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(29)</span>
+              </div>
+              <p class="price">₱4,500.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe12">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe13" data-price="3500.00" data-category="running" data-name="New Balance">
+            <div class="card-image">
+              <img src="New Balance.jpg" alt="New Balance" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>New Balance</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(51)</span>
+              </div>
+              <p class="price">₱3,500.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe13">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe14" data-price="3600.00" data-category="sneakers" data-name="Lakai Cambridge">
+            <div class="card-image">
+              <img src="Lakai Cambridge.webp" alt="Lakai Cambridge" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Lakai Cambridge</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(33)</span>
+              </div>
+              <p class="price">₱3,600.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe14">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe15" data-price="1599.00" data-category="sneakers" data-name="Converse All Star">
+            <div class="card-image">
+              <img src="converse.jpg" alt="Converse All Star" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Converse All Star</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(92)</span>
+              </div>
+              <p class="price">₱1,599.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe15">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe16" data-price="1700.00" data-category="sports" data-name="Korean Black Sports">
+            <div class="card-image">
+              <img src="Korean Black Sports.webp" alt="Korean Black Sports" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Korean Black Sports</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(18)</span>
+              </div>
+              <p class="price">₱1,700.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe16">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe17" data-price="1299.00" data-category="casual" data-name="Rubber Sneakers">
+            <div class="card-image">
+              <img src="Rubber Sneakers.webp" alt="Rubber Sneakers" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Rubber Sneakers</h3>
+              <div class="rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-count">(14)</span>
+              </div>
+              <p class="price">₱1,299.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe17">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe18" data-price="1599.00" data-category="casual" data-name="Corolla">
+            <div class="card-image">
+              <img src="Corolla.webp" alt="Corolla" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Corolla</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(26)</span>
+              </div>
+              <p class="price">₱1,599.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe18">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe19" data-price="2000.00" data-category="sneakers" data-name="Sole Rubber Sneaker">
+            <div class="card-image">
+              <img src="Sole Rubber Sneaker.webp" alt="Sole Rubber Sneaker" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Sole Rubber Sneaker</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(37)</span>
+              </div>
+              <p class="price">₱2,000.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe19">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe20" data-price="1899.00" data-category="sneakers" data-name="YOTO New 2024">
+            <div class="card-image">
+              <img src="YOTO New 2024.webp" alt="YOTO New 2024" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>YOTO New 2024</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(22)</span>
+              </div>
+              <p class="price">₱1,899.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe20">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe21" data-price="3999.00" data-category="sports" data-name="Camel Sports">
+            <div class="card-image">
+              <img src="Camel Sports.webp" alt="Camel Sports" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Camel Sports</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(41)</span>
+              </div>
+              <p class="price">₱3,999.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe21">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe22" data-price="5999.00" data-category="sports" data-name="GT Cut Cross">
+            <div class="card-image">
+              <img src="images/GT Cut Cross.webp" alt="GT Cut Cross" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>GT Cut Cross</h3>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(63)</span>
+              </div>
+              <p class="price">₱5,999.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe22">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card" data-id="shoe23" data-price="2999.00" data-category="sports" data-name="Sabrina 2">
+            <div class="card-image">
+              <img src="Sabrina 2.webp" alt="Sabrina 2" />
+              <button class="wishlist-btn">♡</button>
+              <div class="card-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Sabrina 2</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(48)</span>
+              </div>
+              <p class="price">₱2,999.00</p>
+              <div class="size-selector">
+                <label>Size:</label>
+                <select class="size-select" data-product="shoe23">
+                  <option value="" disabled selected>Select size</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="load-more-container">
+          <button class="load-more-btn">Load More Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section id="offers">
+      <div class="container">
+        <h2>Special Offers</h2>  <a href="offers.html"> 
+
+        <div class="offers-grid"> 
+          <div class="offer-card">
+            <img src="discount.jpg" alt="Special Discount" />
+            <div class="offer-content">
+              <h3>Up to 50% Off</h3>
+              <p>Limited time offer on selected items</p>
+              <button class="offer-btn">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <p class="offer-text">Click the banner to see our latest deals!</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="about-banner">
+          <img src="urbans.png" alt="Made with Love Banner" />
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Urban Footwear</h2>
+            <p>At Urban Footwear, we're not just selling shoes — we're delivering street style with comfort and passion. Our mission is to bring premium, stylish, and affordable sneakers right to your doorstep. Whether you're walking the city streets or making a bold fashion statement, we've got your feet covered.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>10K+</h3>
+                <p>Happy Customers</p>
+              </div>
+              <div class="stat">
+                <h3>500+</h3>
+                <p>Products</p>
+              </div>
+              <div class="stat">
+                <h3>5★</h3>
+                <p>Average Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-form" id="contact">
+      <div class="container">
+       
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <div class="contact-item">
+              <strong>📍 Address:</strong>
+              <p>123 Urban Street, Metro Manila, Philippines</p>
+            </div>
+            <div class="contact-item">
+              <strong>📞 Phone:</strong>
+              <p>+63 912 345 6789</p>
+            </div>
+            <div class="contact-item">
+              <strong>✉️ Email:</strong>
+              <p>pateros@example.com</p>
+            </div>
+            <div class="contact-item">
+              <strong>🕒 Hours:</strong>
+              <p>Mon-Sat: 9AM-8PM<br>Sunday: 10AM-6PM</p>
+            </div>
+          </div>
+           <section class="contact-form">
+  
+   <section class="contact-form">
+  <h2>Contact Us</h2>
+  <form class="contact-form-fields" action="https://formsubmit.co/pateros@example.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            
+            <!-- FormSubmit Hidden Settings -->
+            <input type="hidden" name="_subject" value="New message from Urban Footwear!" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="box" />
+            
+            <button type="submit">Send Message</button>
+          </form>
+
+
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Shopping Cart</h2>
+        <span class="close-btn">&times;</span>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be populated here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Total: ₱<span id="cartTotal">0.00</span></strong>
+        </div>
+        <div class="cart-actions">
+          <button class="clear-cart-btn" id="clearCart">Clear Cart</button>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Urban Footwear</h3>
+          <p>Your destination for premium urban footwear and street style.</p>
+          <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+            <a href="#">📺</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe for updates and exclusive offers</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Your email">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Urban Footwear. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
